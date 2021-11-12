@@ -17,15 +17,13 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!------------------------------>
-  
-</head>
+  </head>
   <body>
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
 
-        <a href="index.html" id="navbar__logo"><img class="logo" src="images/logo.png"> <!--</i>SVP</a>-->
+        <a href="#" id="navbar__logo"><img class="logo" src="images/logo.png"> </i>SVP</a>
 
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
@@ -33,23 +31,8 @@
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="index.html" class="navbar__links">Home</a>
+            <a href="#" class="navbar__links">Home</a>
           </li>
-        </li>
-
-      <!------------------------------------->
-
-    <div class="dropdown">
-      <li class="navbar__btn"><a class="button">Categories</a></li>
-      <div class="dropdown-content">
-         <!--<a href="#1">1 Test</a>
-         <a href="#2">2 Test</a>-->
-         <a href="contact.html">Contact</a>
-      </div>
-    </div>
-
-      <!------------------------------------->
-
           <!--<li class="navbar__item">
             <a href="/tech.html" class="navbar__links">Apps</a>
           </li>
@@ -67,34 +50,54 @@
         <div class="main__content">
           <h1>S V P</h1>
           <!--<h2>TECHNOLOGY</h2>-->
-          <p>NoRMaL iS BoRinG</p>
+          <p>Contact Form</p>
         </div>
         <div class="main__img--container">
-          <img id="main__img" src="images/logo.png" />
+          <!--------------------------------------------------->
+          <link href="contact-form.css" rel="stylesheet">
+
+          <div class="fcf-body">
+          
+              <div id="fcf-form">
+              <h3 class="fcf-h3">Contact us</h3>
+          
+              <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                  
+                  <div class="fcf-form-group">
+                      <label for="Name" class="fcf-label">Your name</label>
+                      <div class="fcf-input-group">
+                          <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                      </div>
+                  </div>
+          
+                  <div class="fcf-form-group">
+                      <label for="Email" class="fcf-label">Your email address</label>
+                      <div class="fcf-input-group">
+                          <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                      </div>
+                  </div>
+          
+                  <div class="fcf-form-group">
+                      <label for="Message" class="fcf-label">Your message</label>
+                      <div class="fcf-input-group">
+                          <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                      </div>
+                  </div>
+          
+                  <div class="fcf-form-group">
+                      <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                  </div>
+          
+              </form>
+              </div>
+              <!--------------------------------------------------->
+          
+          </div>
+
         </div>
       </div>
     </div>
 
-    <!-- Services Section -->
-            <!--<a href="index.html" class="navbar__links">Home</a>-->
-
-    <div class="services">
-      <h1>see what is Recommended for you</h1>
-
-      <div class="services__container">
-        <div class="services__card">
-          <h2>Game Making Apps</h2>
-          <p>Top 3 for Android & IOS</p>
-          <button><!--<a href="#Gaming">Read More</a>-->Read More</button>
-        </div>
-
-        <div class="services__card">
-          <h2>Best Photo Editing Apps</h2>
-          <p>Top 5 for Android & IOS</p>
-          <button>Read More</button>
-        </div>
-      </div>
-    </div>
 
     <!-- Footer Section -->
     <div class="footer__container">
@@ -102,7 +105,7 @@
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>Contact Us</h2>
-            <a href="contact.html">Contact</a>
+            <a href="/">Contact</a>
           </div>
         </div>
         <div class="footer__link--wrapper">
