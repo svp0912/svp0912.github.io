@@ -24,16 +24,25 @@
     -->
   
 </head>
-  <body>
+  <body onload="loadfun()">
 
-    
     <!----------------------------->
+  <div id="loading"></div>
+  <script>
+    var load = document.getElementById("loading");
+    function loadfun()
+     {
+       load.style.display = 'none';
+     }
+  </script>
+    <!----------------------------->
+
 
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
 
-        <a href="index.html" id="navbar__logo"><img class="logo" src="images/logo.png"> </i>SVP</a>
+        <a href="index.html" id="navbar__logo"><img class="logo" src="images/logo.png"> </i></a>
 
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>

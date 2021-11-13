@@ -18,13 +18,22 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      form {
+            width: 320px;
+            padding: 10px;
+            border: 5px solid rgb(234, 0, 255);
+            margin: 0;
+          }
+    </style>
   </head>
   <body>
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
 
-        <a href="index.html" id="navbar__logo"><img class="logo" src="images/logo.png"> </i>SVP</a>
+        <a href="index.html" id="navbar__logo"><img class="logo" src="images/logo.png"> </i></a>
 
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
@@ -69,49 +78,25 @@
         </div>
         <div class="main__img--container">
           <!--------------------------------------------------->
-          <link href="contact-form.css" rel="stylesheet">
-
-          <div class="fcf-body">
-          
-              <div id="fcf-form">
-              <h3 class="fcf-h3">Contact us</h3>
-          
-              <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-                  
-                  <div class="fcf-form-group">
-                      <label for="Name" class="fcf-label">Your name</label>
-                      <div class="fcf-input-group">
-                          <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                      </div>
-                  </div>
-          
-                  <div class="fcf-form-group">
-                      <label for="Email" class="fcf-label">Your email address</label>
-                      <div class="fcf-input-group">
-                          <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                      </div>
-                  </div>
-          
-                  <div class="fcf-form-group">
-                      <label for="Message" class="fcf-label">Your message</label>
-                      <div class="fcf-input-group">
-                          <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                      </div>
-                  </div>
-          
-                  <div class="fcf-form-group">
-                      <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-                  </div>
-          
-              </form>
-              </div>
-              <!--------------------------------------------------->
+          <form style="color: rgb(247, 0, 255);"
+            action="mailto:svp.social.me@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailForm">
+            Name:<br>
+            <input type="text" size="25" name="Contact-Name"><br><br>
+            Email:<br>
+            <input type="email" size="25" name="Contact-Email"><br><br> 
+            Message:<br> 
+            <textarea name="Contact-Message" rows="6″ cols="30″>
+            </textarea><br>
+            <button type="submit" value="Submit">Send</button>
+          </form>
+          <!--------------------------------------------------->
           
           </div>
-
         </div>
       </div>
-    </div>
 
 
     <!-- Footer Section -->
@@ -119,13 +104,13 @@
       <div class="footer__links">
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
-            <h2>Contact Us</h2>
+            <h2><br><br>Contact Us</h2>
             <a href="/">Contact</a>
           </div>
         </div>
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
-            <h2>Social Media</h2>
+            <h2><br><br>Social Media</h2>
             <a href="https://instagram.com/ig_svp">Instagram</a>
             <a href="https://youtube.com/c/SVPMonarch">Youtube</a> <a href="https://twitter.com/ig_svp">Twitter</a>
           </div>
