@@ -5,8 +5,40 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+/*****************************/
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  box-shadow: 0px 0px 10px 5px #ff00f273;
+  background: #00eeff;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  color: #fff;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #ff00f2;
+}
+/*****************************/
+
 .navbar {
-  background: #131313;
+  background: #8c00ff;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -46,7 +78,7 @@
 }
 
 .logo {
-  block-size: 3rem;
+  block-size: 5rem;
   margin-right: 0.5rem;
 }
 
@@ -95,12 +127,12 @@
 }
 
 .button:hover {
-  background: #4837ff;
+  background: #00eeff;
   transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-  color: #9a01ff;
+  color: #01eeff;
   transition: all 0.3s ease;
 }
 
@@ -129,7 +161,7 @@
   }
 
   .navbar__menu.active {
-    background: #131313;
+    background: #000000;
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -201,7 +233,7 @@
 
 /* Main Content CSS */
 .main {
-  background-color: #141414;
+  background-color: #000000;
 }
 
 .main__container {
@@ -211,7 +243,7 @@
   justify-self: center;
   margin: 0 auto;
   height: 90vh;
-  background-color: #131313;
+  background-color: #000000;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -271,7 +303,7 @@
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 90vh;
+    height: 50vh;
   }
 
   .main__content {
@@ -312,7 +344,7 @@
 
 /* Services Section */
 .services {
-  background: #131313;
+  background: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -438,7 +470,7 @@
 
 /* Footer CSS */
 .footer__container {
-  background-color: #141414;
+  background-color: #000000;
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -706,9 +738,9 @@ label.fcf-label {
 
 .fcf-btn-primary:focus, .fcf-btn-primary.focus {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  background-color: #00eeff;
+  border-color: #00eeff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 255, 0.5);
 }
 
 .fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
@@ -731,7 +763,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   width: 100%;
 }
 
-
+/**************************************************************/
 
 
 
